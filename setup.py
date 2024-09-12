@@ -28,8 +28,8 @@ setup(
         ],
     },
     data_files=[
-        ('/.config', [
-            '.config/config',
+        ('/.config/custom_cot', [
+            'custom_bot/config',
         ]),
     ],
     zip_safe=False,
