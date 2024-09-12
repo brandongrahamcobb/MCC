@@ -1,0 +1,9 @@
+README.md
+setup.py
+custom_bot.egg-info/PKG-INFO
+custom_bot.egg-info/SOURCES.txt
+custom_bot.egg-info/dependency_links.txt
+custom_bot.egg-info/entry_points.txt
+custom_bot.egg-info/not-zip-safe
+custom_bot.egg-info/requires.txt
+custom_bot.egg-info/top_level.txt
