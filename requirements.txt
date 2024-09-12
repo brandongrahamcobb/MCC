@@ -1,0 +1,5 @@
+discord.py
+pip
+pyyaml
+setuptools
+wheel
