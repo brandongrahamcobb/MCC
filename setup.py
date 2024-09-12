@@ -27,10 +27,5 @@ setup(
             'mcc=bot.main:run',
         ],
     },
-    data_files=[
-        ('/.config/custom_bot', [
-            'custom_bot/config',
-        ]),
-    ],
     zip_safe=False,
 )
