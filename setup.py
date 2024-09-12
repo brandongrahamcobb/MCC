@@ -28,7 +28,7 @@ setup(
         ],
     },
     data_files=[
-        ('/.config/custom_cot', [
+        ('/.config/custom_bot', [
             'custom_bot/config',
         ]),
     ],
