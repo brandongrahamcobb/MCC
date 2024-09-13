@@ -1,31 +1,35 @@
 from setuptools import find_packages, setup
 
 setup(
-    name='custom_bot',
-    version='1.0.0',
-    packages=find_packages(),
+    author='Your Name',
+    author_email='Your Email',
+    classifiers=[
+        'Development Status :: 1 - Alpha'
+        'Environment :: Console',
+        'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
+        'Intended Audience :: Developers',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python :: 3.8',
+    ],
+    description='The MCC STEMgineering club Discord bot is a unique application of computer science.',
+    entry_points={
+        'console_scripts': [
+            'custom_bot=bot.main:run',
+        ],
+    },
     include_package_data=True,
     install_requires=[
         'discord.py',
         'pip',
         'pyyaml',
     ],
-    author='Your Name',
-    author_email='your_email@example.com',
-    description='A brief description of your project',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/your-github/MCC',  # Your GitHub URL
-    classifiers=[
-        'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: MIT License',  # Your license if applicable
-        'Operating System :: OS Independent',
-    ],
-    python_requires='>=3.6',
-    entry_points={
-        'console_scripts': [
-            'mcc=bot.main:run',
-        ],
-    },
+    maintainer='Brandon Cobb',
+    name='custom_bot',
+    packages=find_packages(),
+    python_requires='>=3.8',
+    url='https://github.com/brandongrahamcobb/MCC', 
+    version='1.0.0',
     zip_safe=False,
 )
