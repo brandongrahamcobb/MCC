@@ -13,3 +13,80 @@ Description-Content-Type: text/markdown
 Requires-Dist: discord.py
 Requires-Dist: pip
 Requires-Dist: pyyaml
+
+### Workflow for Cloning a Discord Bot with a Wheel Release
+
+1. **Pre-requisites:**
+   - Ensure you have Python and pip installed on your machine.
+   - Install Git to clone repositories.
+   - Install Visual Studio Code (VSCode).
+   - Ensure you have the Discord.py library and other necessary dependencies.
+
+2. **Finding the Repository:**
+   - Locate the GitHub (or other Git repository) URL of the Discord bot you want to clone. Ensure it contains releases, particularly a `.whl` (wheel) file.
+
+3. **Cloning the Repository:**
+   - Open VSCode.
+   - Open the integrated terminal in VSCode (you can access this via `View > Terminal`).
+   - Run the following command in the terminal to clone the repository:
+     ```bash
+     git clone <repository-url>
+     ```
+   - Navigate to the cloned directory:
+     ```bash
+     cd <repository-directory>
+     ```
+
+4. **Setting Up a Virtual Environment:**
+   - Create a virtual environment to isolate your project dependencies:
+     ```bash
+     python -m venv venv
+     ```
+   - Activate the virtual environment:
+     - **Windows:**
+       ```bash
+       venv\Scripts\activate
+       ```
+     - **macOS/Linux:**
+       ```bash
+       source venv/bin/activate
+       ```
+
+5. **Installing Dependencies:**
+   - If the project contains a `requirements.txt` file, install the dependencies:
+     ```bash
+     pip install -r requirements.txt
+     ```
+   - If you want to use the wheel file as a package:
+     - Locate the `.whl` file in the releases section of the GitHub or the cloned directory.
+     - Install it using pip :
+       ```bash
+       pip install custom_bot-1.0.0-py3-none-any.whl
+       ```
+
+7. **Running the Bot:**
+   - Once everything is set up, you can run the bot. Make sure the virtual environment is activated. Run the main bot script via terminal:
+     ```bash
+     python main.py
+     ```
+   - Monitor the terminal for any output or errors.
+
+8. **Debugging:**
+   - Use VSCode's debugging features to set breakpoints, inspect variables, and debug the bot as needed.
+
+9. **Making Changes:**
+   - You may wish to edit or add features to the bot. Use VSCode's editing capabilities, and remember to commit your changes if using version control (e.g., Git):
+     ```bash
+     git add .
+     git commit -m "Your commit message"
+     git push
+     ```
+
+10. **Updating the Bot:**
+    - Periodically pull updates from the original repository if it is actively maintained:
+      ```bash
+      git pull origin main  # or the appropriate branch
+      ```
+
+### Summary
+This workflow covers cloning a Discord bot with a wheel release using VSCode. It includes setting up the environment, installing dependencies, running the bot, and making changes as necessary. Remember to refer to the specific documentation of the bot you are cloning for any unique setup or configuration steps.
